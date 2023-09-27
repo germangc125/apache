@@ -32,5 +32,9 @@ Wordpress
 /var/www/new-site$ -> $tar xfz latest.tar.gz // Descomprimir
 sudo systemctl reload apache2
 
+sudo cp -r ./new-site/wordpress/. ./new-site
+sudo rm -r wordpress
+
+
 
 # apache
