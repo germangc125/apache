@@ -35,6 +35,10 @@ sudo systemctl reload apache2
 sudo cp -r ./new-site/wordpress/. ./new-site
 sudo rm -r wordpress
 
+// Habilitar el nuevo dominio
+sudo a2ensite your_domain_1.conf
 
 
 # apache
+Permisos-> sudo chown -R www-data:www-data wp-content
+config.php -> define('FS_METHOD', 'direct');
