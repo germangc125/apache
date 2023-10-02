@@ -16,8 +16,8 @@ cd /etc/apache2/sites-available/ -> sudo cp 000-default.conf new-site.conf -> su
 
 
 Config mysql server
-- sudo apt install mysql-server
-- sudo mysql -u root -p
+sudo apt install mysql-server
+sudo mysql -u root -p
 mysql>update mysql.user SET plugin='mysql_native_password' WHERE user='root';
 mysql> FLUSH PRIVILEGES;
 mysql>create database wordpress;
@@ -28,8 +28,8 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword'; // Cambiar clave de r
 
 Wordpress
 /var/www/new-site$ -> sudo wget http://wordpress.org/latest.tar.gz // Descargar
-/var/www/new-site$ sudo chmod 777 -R /var/www/ontonner  // Permisos
-/var/www/new-site$ -> $tar xfz latest.tar.gz // Descomprimir
+/var/www/new-site$ sudo chmod 777 -R /var/www/new-site  // Permisos
+/var/www/new-site$ -> sudo tar xfz latest.tar.gz // Descomprimir
 sudo systemctl reload apache2
 
 sudo cp -r ./new-site/wordpress/. ./new-site
@@ -42,3 +42,13 @@ sudo a2ensite your_domain_1.conf
 # apache
 Permisos-> sudo chown -R www-data:www-data wp-content
 config.php -> define('FS_METHOD', 'direct');
+
+// Renombrar
+sudo mv info.php index.html
+
+// Crear file empty
+ sudo touch info.php
+
+// Permisos
+sudo chown www-data: /var/www/<WordPress root folder> -R
+sudo chmod 755 /var/www/<WordPress root folder> -R
