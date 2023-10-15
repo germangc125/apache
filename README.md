@@ -52,3 +52,27 @@ sudo mv info.php index.html
 // Permisos
 sudo chown www-data: /var/www/<WordPress root folder> -R
 sudo chmod 755 /var/www/<WordPress root folder> -R
+
+
+
+.htaccess
+# Really Simple SSL
+Header always set Content-Security-Policy "upgrade-insecure-requests"
+# End Really Simple SSL
+
+
+# BEGIN WordPress
+# Las directivas (líneas) entre «BEGIN WordPress» y «END WordPress» son
+# generadas dinámicamente y solo deberían ser modificadas mediante filtros de WordPress.
+# Cualquier cambio en las directivas que hay entre esos marcadores serán sobrescritas.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
