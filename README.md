@@ -53,6 +53,8 @@ sudo mv info.php index.html
 sudo chown www-data: /var/www/<WordPress root folder> -R
 sudo chmod 755 /var/www/<WordPress root folder> -R
 
+Ubuntu
+sudo apt remove [package]
 
 
 .htaccess
