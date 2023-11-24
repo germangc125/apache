@@ -38,7 +38,8 @@ sudo rm -r wordpress
 // Habilitar el nuevo dominio
 sudo a2ensite your_domain_1.conf
 
-
+ sudo mkdir -p .well-known/pki-validation
+ 
 # apache
 Permisos-> sudo chown -R www-data:www-data wp-content
 config.php -> define('FS_METHOD', 'direct');
