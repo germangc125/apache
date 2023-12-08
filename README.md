@@ -79,3 +79,11 @@ RewriteRule . /index.php [L]
 
 # END WordPress
 
+
+
+sudo systemctl stop mysql -> Para mysql
+sudo apt-get purge mysql-server mysql-client mysql-common mysql-server-core-* mysql-client-core-* -> rm paquetes relacionados
+sudo rm -rf /etc/mysql /var/lib/mysql -> Datos
+sudo apt autoremove -> optional
+sudo apt autoclean -> optional 
+
