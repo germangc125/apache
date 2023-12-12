@@ -87,3 +87,5 @@ sudo rm -rf /etc/mysql /var/lib/mysql -> Datos
 sudo apt autoremove -> optional
 sudo apt autoclean -> optional 
 
+
+tail -f /var//log/apache2/error.log  
