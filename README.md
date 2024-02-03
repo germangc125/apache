@@ -89,3 +89,9 @@ sudo apt autoclean -> optional
 
 
 tail -f /var//log/apache2/error.log  
+
+Descomprimir
+
+unzip your-file.zip
+unzip your-file.zip -d directory 
+rm /path/to/your-file.zip
