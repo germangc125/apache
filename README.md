@@ -95,3 +95,20 @@ Descomprimir
 unzip your-file.zip
 unzip your-file.zip -d directory 
 rm /path/to/your-file.zip
+
+
+
+
+MongoDB
+ sudo systemctl start mongod
+ sudo systemctl daemon-reload
+ sudo systemctl status mongod
+ sudo systemctl stop mongod
+Configuracion
+ sudo nano /etc/mongod.conf
+
+Saber que puertos estan abiertos
+sudo netstat -ntlp | grep LISTEN
+
+
+
