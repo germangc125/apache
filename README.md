@@ -110,5 +110,6 @@ Configuracion
 Saber que puertos estan abiertos
 sudo netstat -ntlp | grep LISTEN
 
-
+Create user and publuc acces
+https://codearmy.co/como-crear-autenticaci%C3%B3n-y-permitir-acceso-remoto-a-mongodb-1b0231a6df44
 
