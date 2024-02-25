@@ -53,7 +53,7 @@ sudo mv info.php index.html
 // Permisos
 sudo chown www-data: /var/www/<WordPress root folder> -R
 sudo chmod 755 /var/www/<WordPress root folder> -R
-
+sudo chmod 775 /var/www/<WordPress root folder> -R  -- Full permisos 
 Ubuntu
 sudo apt remove [package]
 
