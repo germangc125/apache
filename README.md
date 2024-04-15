@@ -113,3 +113,8 @@ sudo netstat -ntlp | grep LISTEN
 Create user and publuc acces
 https://codearmy.co/como-crear-autenticaci%C3%B3n-y-permitir-acceso-remoto-a-mongodb-1b0231a6df44
 
+/// Linux
+sudo su - (para cambiar el usuario a root)
+bash <(curl -sSL https://get.openpanel.co/) (example)
+
+
