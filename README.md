@@ -118,3 +118,6 @@ sudo su - (para cambiar el usuario a root)
 bash <(curl -sSL https://get.openpanel.co/) (example)
 
 
+Update linux
+
+sudo apt update && sudo apt upgrade -y
