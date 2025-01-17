@@ -28,7 +28,20 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword'; // Cambiar clave de r
 
 sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 
+   mysql -u root -p
+    -- root password
 
+    CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
+
+    GRANT ALL PRIVILEGES ON *.* TO 'username'@'localhost' WITH GRANT OPTION;
+
+    CREATE USER 'username'@'%' IDENTIFIED BY 'password';
+
+    GRANT ALL PRIVILEGES ON *.* TO 'username'@'%' WITH GRANT OPTION;
+
+    FLUSH PRIVILEGES;
+
+    EXIT;
 
 
 Wordpress
