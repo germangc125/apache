@@ -26,6 +26,12 @@ mysql>show databases;
 Change password root
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword'; // Cambiar clave de root
 
+ CREATE USER 'root'@'localhost' IDENTIFIED BY 'password';
+   GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
+   
+  CREATE USER 'root'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON *.* TO 'user'@'%' WITH GRANT OPTION;
+
 sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 
    mysql -u root -p
