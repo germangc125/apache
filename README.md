@@ -26,6 +26,11 @@ mysql>show databases;
 Change password root
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword'; // Cambiar clave de root
 
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+
+
+
+
 Wordpress
 /var/www/new-site$ -> sudo wget http://wordpress.org/latest.tar.gz // Descargar
 /var/www/new-site$ sudo chmod 777 -R /var/www/new-site  // Permisos
